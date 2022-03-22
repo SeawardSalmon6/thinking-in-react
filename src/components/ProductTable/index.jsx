@@ -7,6 +7,12 @@ function ProductTable(props) {
 
   // --> For each product...
   props.products.forEach((product) => {
+    if (product.name.indexOf(props.filterText) === -1) {
+      return;
+    }
+    if (props.inStockOnly && !product.stocked) {
+      return;
+    }
     if (product.category !== lastCategory) {
       // --> If product has a new category
       rows.push(
@@ -28,7 +34,7 @@ function ProductTable(props) {
       <thead>
         <tr>
           <th>Name</th>
-          <th>price</th>
+          <th>Price</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>
