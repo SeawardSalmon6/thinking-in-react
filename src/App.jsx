@@ -1,4 +1,6 @@
-const date = [
+import FilterableProductTable from "./components/FilterableProductTable";
+
+const productsData = [
   {
     category: "Sporting Goods",
     price: "$49.99",
@@ -41,7 +43,7 @@ const date = [
 */
 
 function App() {
-  return;
+  return <FilterableProductTable products={productsData} />;
 }
 
 export default App;
