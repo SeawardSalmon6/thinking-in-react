@@ -1,3 +1,5 @@
+import SearchBar from "../SearchBar";
+
 function FilterableProductTable(props) {
   return (
     <div>
