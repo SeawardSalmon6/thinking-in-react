@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import SearchBar from "../SearchBar";
 import ProductTable from "../ProductTable";
+import classes from "./index.module.css";
 
 function FilterableProductTable(props) {
   const [filterText, setFilterText] = useState("");
@@ -16,7 +17,7 @@ function FilterableProductTable(props) {
   }
 
   return (
-    <div>
+    <div className={classes.FilteredTable__container}>
       <SearchBar
         updateFilterText={updateFilterTextHandler}
         updateInStockOnly={updateInStockOnlyHandler}

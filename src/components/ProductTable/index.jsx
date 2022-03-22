@@ -1,5 +1,6 @@
-import ProductCategoryRow from "../ProductCategoryRow";
-import ProductRow from "../ProductRow";
+import ProductCategoryRow from "./ProductCategoryRow";
+import ProductRow from "./ProductRow";
+import classes from "./index.module.css";
 
 function ProductTable(props) {
   const rows = [];
@@ -30,7 +31,7 @@ function ProductTable(props) {
   });
 
   return (
-    <table>
+    <table className={classes.Table__container}>
       <thead>
         <tr>
           <th>Name</th>

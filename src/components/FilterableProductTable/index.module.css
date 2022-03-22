@@ -1,0 +1,12 @@
+.FilteredTable__container {
+  max-width: 600px;
+  width: max-content;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 4rem;
+  overflow: hidden;
+}

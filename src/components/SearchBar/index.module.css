@@ -1,4 +1,28 @@
-.displayBlock {
-  display: block;
-  margin: 0.6rem 0;
+.SearchBar__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.SearchBar__container label {
+  font-size: 1.4rem;
+}
+
+.SearchBar__container label input {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.SearchBar__input {
+  width: 100%;
+  padding: 2px 8px;
+  font-size: 1.6rem;
+  border: 2px solid var(--heading-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }

@@ -1,0 +1,35 @@
+.Table__container {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+.Table__container thead tr {
+  background: var(--heading-color);
+  color: var(--bg-secondary-color);
+  text-align: left;
+  font-weight: bold;
+}
+
+.Table__container th,
+.Table__container td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.Table__container tbody th {
+  padding-top: 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.Table__container tbody tr:nth-of-type(even) :not(th) {
+  background-color: var(--bg-secondary-color);
+}
+
+.Table__container tbody tr:last-of-type {
+  border-bottom: 2px solid var(--heading-color);
+}

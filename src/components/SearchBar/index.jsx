@@ -2,8 +2,9 @@ import classes from "./index.module.css";
 
 function SearchBar(props) {
   return (
-    <form>
+    <form className={classes.SearchBar__container}>
       <input
+        className={classes.SearchBar__input}
         type="text"
         name="SearchBar"
         id="SearchBar"
