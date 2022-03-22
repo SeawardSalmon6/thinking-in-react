@@ -1,3 +1,6 @@
+import ProductCategoryRow from "../ProductCategoryRow";
+import ProductRow from "../ProductRow";
+
 function ProductTable(props) {
   const rows = [];
   let lastCategory = null;
@@ -23,8 +26,10 @@ function ProductTable(props) {
   return (
     <table>
       <thead>
-        <td>Name</td>
-        <td>price</td>
+        <tr>
+          <th>Name</th>
+          <th>price</th>
+        </tr>
       </thead>
       <tbody>{rows}</tbody>
     </table>
